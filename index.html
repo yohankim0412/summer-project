@@ -3,20 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Typing Text</title>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
-      <link href = "style.css" rel="stylesheet">
+    <title>Post</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-<div class="wrap">
-    <h1>
-    <span class="material-icons">language</span> 
-    </h1> 
-    <p id="dynamic" class="lg-text">
-        Learn to HTML
-    </p>
-    <p class="sm-text">SUCODING | 100 Subscribe</p>   
-</div>
+    <div class="post-container">
+        <h1>Post</h1>
+        <input type="text" id="title" placeholder="제목을 입력하세요">
+        <textarea id="content" placeholder="내용을 입력하세요"></textarea>
+        <div class="actions">
+            <div class="buttons">
+                <button id="upload-btn"><span class="icon">✏️</span> 업로드</button>
+                <button id="delete-btn"><span class="icon">🗑️</span> 삭제</button>
+            </div>
+            <div class="icons">
+                <span class="icon"><i class="fas fa-font"></i></span>
+                <span class="icon"><i class="fas fa-file-upload"></i></span>
+                <span class="icon"><i class="far fa-smile"></i></span>
+                <span class="icon"><i class="fas fa-camera"></i></span>
+            </div>
+        </div>
+    </div>
+    
+    <script src="main.js"></script>
 </body>
 </html>
