@@ -1,34 +1,95 @@
-*{
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
     margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-
-}
-body{
-    background-color: darkcyan;
+    background-color: #ccffcc; 
+    font-family: Arial, sans-serif;
 }
 
-.wrap{
- position: absolute;
- top: 50%;
- left: 50%;
- transform: translate(-50%,-50%);
- color: blueviolet;
- text-align: center;
-
-}
-.material-icons{
-font-size: 10rem;
-
-}
-.lg-text{
-    font-size: 2rem;
-    font-weight: bold;
-    margin-bottom: 5px ;
-
-}
-.sm-text{
-    font-size:1.5rem;
-
+.post-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 600px;
+    height: 800px;
+    background-color: #eaf7e9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+.actions {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+.buttons,
+.icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttons button,
+.icons .icon {
+    padding: 12px 24px;
+    font-size: 18px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2px;
+}
+.post-container input,
+.post-container textarea {
+    width: calc(100% - 40px);
+    padding: 10px 10px 10px 30px; 
+    border: 1px solid #ccc;
+    border-radius: 50px; 
+    display: block;
+}
+
+.post-container input,
+.post-container textarea {
+    width: calc(100% - 40px); 
+    padding: 15px 15px 15px 45px; 
+    margin: 0 auto 30px auto; 
+    border: 1px solid #ccc;
+    border-radius: 50px; 
+    display: block;
+}
+
+.post-container textarea {
+    height: 350px; 
+    resize: none;
+    border-radius: 50px;
+}
+
+
+
+.post-container .buttons,
+.post-container .icons {
+    display: flex;
+    justify-content: space-between; 
+    width: 100%; 
+}
+
+.post-container .buttons button,
+.post-container .icons .icon {
+    padding: 12px 24px; 
+    cursor: pointer;
+    font-size: 18px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.post-container .icons .icon {
+    background-color: #eaf7e9; 
+    border-radius: 10px; 
+    margin-right: 10px; 
+}
